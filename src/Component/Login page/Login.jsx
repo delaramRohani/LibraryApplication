@@ -79,7 +79,7 @@ const Login = () => {
       <Box sx={{ textAlign: "center", mt: 2 }}>
         <Typography variant="body2">
           Don't have an account?{" "}
-          <Button onClick={() => navigate("/register")}>Register</Button>
+          <Button onClick={() => navigate("/register")}>Sign Up</Button>
         </Typography>
       </Box>
     </Container>
