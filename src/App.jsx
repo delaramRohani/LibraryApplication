@@ -1,15 +1,19 @@
-import { Button } from "@mui/material";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Home from "./pages/Home";
 import './App.css'
 
 function App() {
   return (
     <>
-      <div style={{ textAlign: "center", marginTop: "50px" }}>
-        <h1>Welcome to Library App 📚</h1>
-        <Button variant="contained" color="primary">
-          Click Me
-        </Button>
-      </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </Router>
     </>
   )
 }
