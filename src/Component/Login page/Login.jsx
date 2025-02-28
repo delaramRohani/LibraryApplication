@@ -66,7 +66,7 @@ const Login = () => {
           required
         />
 
-        <Button className = "login-btn"
+        <Button class = "login-btn"
           fullWidth
           type="submit"
           variant="contained"
@@ -77,10 +77,10 @@ const Login = () => {
         </Button>
       </form>
 
-      <Box className = "signup-link" sx={{ textAlign: "center", mt: 2 }}>
+      <Box class = "signup-link" sx={{ textAlign: "center", mt: 2 }}>
         <Typography variant="body2">
           Don't have an account?{" "}
-          <Button className = "signup-btn" onClick={() => navigate("/register")}>Sign Up</Button>
+          <Button class = "signup-btn" onClick={() => navigate("/register")}>Sign Up</Button>
         </Typography>
       </Box>
     </Container>
