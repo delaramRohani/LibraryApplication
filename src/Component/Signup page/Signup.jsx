@@ -29,12 +29,12 @@ const Signup = () => {
   };
 
   return (
-    <Container className="container">
+    <Container class="container">
       <Box>
-        <Typography className="title">Register</Typography>
+        <Typography class="title">Register</Typography>
       </Box>
 
-      {error && <Alert className="error-message">{error}</Alert>}
+      {error && <Alert class="error-message">{error}</Alert>}
 
       <form onSubmit={handleRegister}>
         <TextField
@@ -56,7 +56,7 @@ const Signup = () => {
           required
         />
         <TextField
-          class="input-field"
+          className="input-field"
           label="Password"
           type="password"
           variant="outlined"
@@ -65,12 +65,12 @@ const Signup = () => {
           required
         />
 
-        <Button className="register-button" type="submit">
+        <Button class="register-button" type="submit">
           Register
         </Button>
       </form>
 
-      <Box className="login-link">
+      <Box class="login-link">
         <Typography variant="body2">
           Already have an account?{" "}
           <Button onClick={() => navigate("/login")}>Login</Button>
