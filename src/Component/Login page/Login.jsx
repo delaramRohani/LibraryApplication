@@ -9,6 +9,7 @@ import {
   Box,
   Alert,
 } from "@mui/material";
+import "./login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -65,7 +66,7 @@ const Login = () => {
           required
         />
 
-        <Button
+        <Button class = "login-btn"
           fullWidth
           type="submit"
           variant="contained"
@@ -76,10 +77,10 @@ const Login = () => {
         </Button>
       </form>
 
-      <Box sx={{ textAlign: "center", mt: 2 }}>
+      <Box class="signup-link" sx={{ textAlign: "center", mt: 2 }}>
         <Typography variant="body2">
           Don't have an account?{" "}
-          <Button onClick={() => navigate("/register")}>Sign Up</Button>
+          <Button class="signup-btn" onClick={() => navigate("/register")}>Sign Up</Button>
         </Typography>
       </Box>
     </Container>
