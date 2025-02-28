@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { TextField, Button, Container, Typography } from "@mui/material";
+import { TextField, Button, Container, Typography, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import '../Signup page/signup.css'
+import './signup.css'
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -56,7 +56,7 @@ const Signup = () => {
           required
         />
         <TextField
-          className="input-field"
+          class="input-field"
           label="Password"
           type="password"
           variant="outlined"
