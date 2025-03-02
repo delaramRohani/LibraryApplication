@@ -29,16 +29,16 @@ const Signup = () => {
   };
 
   return (
-    <Container class="signup-container">
+    <Container class="container">
       <Box>
-        <Typography class="signup-title">Sign Up</Typography>
+        <Typography class="title">Sign Up</Typography>
       </Box>
 
-      {error && <Alert class="signup-error-message">{error}</Alert>}
+      {error && <Alert class="error-message">{error}</Alert>}
 
       <form onSubmit={handleRegister}>
         <TextField
-          className="signup-input-field"
+          className="input-field"
           label="Full Name"
           type="text"
           variant="outlined"
@@ -47,7 +47,7 @@ const Signup = () => {
           required
         />
         <TextField
-          className="signup-input-field"
+          className="input-field"
           label="Email"
           type="email"
           variant="outlined"
@@ -56,7 +56,7 @@ const Signup = () => {
           required
         />
         <TextField
-          className="signup-input-field"
+          className="input-field"
           label="Password"
           type="password"
           variant="outlined"
@@ -65,12 +65,12 @@ const Signup = () => {
           required
         />
 
-        <Button class="signup-register-button" type="submit">
+        <Button class="register-button" type="submit">
           Sign Up
         </Button>
       </form>
 
-      <Box id="login-link">
+      <Box class="login-link">
         <Typography variant="body2">
           Already have an account?{" "}
           <Button onClick={() => navigate("/login")}>Login</Button>
