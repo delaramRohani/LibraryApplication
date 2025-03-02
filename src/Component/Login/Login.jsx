@@ -9,7 +9,7 @@ import {
   Box,
   Alert,
 } from "@mui/material";
-// import "./login.css";
+import "./login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -35,17 +35,17 @@ const Login = () => {
   };
 
   return (
-    <Container class="login-container" maxWidth="xs">
+    <Container maxWidth="xs">
       <Box sx={{ textAlign: "center", mt: 8 }}>
         <Typography variant="h4" gutterBottom>
           Login
         </Typography>
       </Box>
 
-      {error && <Alert class = "login-alert" severity="error">{error}</Alert>}
+      {error && <Alert severity="error">{error}</Alert>}
 
       <form onSubmit={handleLogin}>
-        <TextField class = "login-textField"
+        <TextField
           fullWidth
           label="Email"
           type="email"
@@ -55,7 +55,7 @@ const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <TextField class = "login-textField"
+        <TextField
           fullWidth
           label="Password"
           type="password"
@@ -66,7 +66,7 @@ const Login = () => {
           required
         />
 
-        <Button id = "login-btn"
+        <Button class = "login-btn"
           fullWidth
           type="submit"
           variant="contained"
@@ -77,10 +77,10 @@ const Login = () => {
         </Button>
       </form>
 
-      <Box id = "signup-link" sx={{ textAlign: "center", mt: 2 }}>
+      <Box class = "signup-link" sx={{ textAlign: "center", mt: 2 }}>
         <Typography variant="body2">
           Don't have an account?{" "}
-          <Button id = "signup-btn" onClick={() => navigate("/register")}>Sign Up</Button>
+          <Button class = "signup-btn" onClick={() => navigate("/register")}>Sign Up</Button>
         </Typography>
       </Box>
     </Container>
