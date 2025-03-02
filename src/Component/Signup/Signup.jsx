@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TextField, Button, Container, Typography, Box, Alert } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import './signup.css'
+// import './signup.css'
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -29,16 +29,16 @@ const Signup = () => {
   };
 
   return (
-    <Container class="container">
+    <Container class="signup-container">
       <Box>
-        <Typography class="title">Register</Typography>
+        <Typography class="signup-title">Sign Up</Typography>
       </Box>
 
-      {error && <Alert class="error-message">{error}</Alert>}
+      {error && <Alert class="signup-error-message">{error}</Alert>}
 
       <form onSubmit={handleRegister}>
         <TextField
-          className="input-field"
+          className="signup-input-field"
           label="Full Name"
           type="text"
           variant="outlined"
@@ -47,7 +47,7 @@ const Signup = () => {
           required
         />
         <TextField
-          className="input-field"
+          className="signup-input-field"
           label="Email"
           type="email"
           variant="outlined"
@@ -56,7 +56,7 @@ const Signup = () => {
           required
         />
         <TextField
-          className="input-field"
+          className="signup-input-field"
           label="Password"
           type="password"
           variant="outlined"
@@ -65,12 +65,12 @@ const Signup = () => {
           required
         />
 
-        <Button class="register-button" type="submit">
-          Register
+        <Button class="signup-register-button" type="submit">
+          Sign Up
         </Button>
       </form>
 
-      <Box class="login-link">
+      <Box id="login-link">
         <Typography variant="body2">
           Already have an account?{" "}
           <Button onClick={() => navigate("/login")}>Login</Button>

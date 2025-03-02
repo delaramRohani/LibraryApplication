@@ -27,6 +27,7 @@
     margin-left: 10px;
     background-color: #E9C46A;
     color: #264653;
+    margin: 5px;
     padding: 8px 15px;
     border-radius: 5px;
     font-weight: bold;
@@ -37,7 +38,6 @@
     background-color: #F4A261;
   }
   
-  /* جعبه‌ی جستجو */
   .search-container {
     margin-top: 20px;
     padding: 20px;
@@ -51,7 +51,6 @@
     border-radius: 5px;
   }
   
-  /* لیست کتاب‌ها */
   .book-list {
     margin-top: 30px;
     padding: 20px;
@@ -79,7 +78,6 @@
     object-fit: cover;
   }
   
-  /* دکمه نمایش همه‌ی کتاب‌ها */
   .view-all-container {
     text-align: center;
     margin: 30px 0;
@@ -97,7 +95,6 @@
     background-color: #F4A261;
   }
   
-  /* فوتر */
   .footer {
     background-color: #2A9D8F;
     text-align: center;

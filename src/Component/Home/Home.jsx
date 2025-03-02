@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, TextField, Button, Typography, Grid, Card, CardContent, CardMedia } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-// import "./home.css";
+import "./home.css";
 
 const Home = () => {
   const navigate = useNavigate();
